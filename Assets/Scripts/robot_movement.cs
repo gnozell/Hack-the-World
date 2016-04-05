@@ -5,9 +5,11 @@ public class robot_movement : MonoBehaviour {
 
 	private float speed = 40f;
 	private float cSpeed;
-	private float maxSpeed = 30f;
+	private float maxSpeed = 10f;
 	private float jumpSpeed = 10f;
 	private bool onGround = false;
+
+	public Transform spawnPoint;
 
 	private Rigidbody2D playerRb2D;
 	private Animator playerAnim;
@@ -58,8 +60,14 @@ public class robot_movement : MonoBehaviour {
 		float hor = Input.GetAxis ("Horizontal");
 		float vert = Input.GetAxis ("Vertical");
 
+
 		// Adds speed to bot
 		playerRb2D.AddForce (new Vector2 (hor * cSpeed, 0));
+
+
+		if ( !((transform.eulerAngles.z < 16) || (transform.eulerAngles.z > 344)) && (onGround) ) {
+			playerRb2D.AddForce (new Vector2 (-hor * cSpeed, 0));
+		}
 
 		// Handles MAX speed
 		if (Mathf.Abs(playerRb2D.velocity.x) > maxSpeed) {
@@ -91,11 +99,11 @@ public class robot_movement : MonoBehaviour {
 
 		if (transform.position.y <= -10) {
 			// respawns if falls off the map
-			Vector3 temp = transform.position;
-			temp.y = 10f;
+			//Vector3 temp = transform.position;
+			//temp.y = 10f;
 			playerRb2D.velocity = new Vector2();
 
-			transform.position= temp;
+			transform.position= spawnPoint.position;
 
 		}
 
