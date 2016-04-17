@@ -1,9 +1,21 @@
 fileFormatVersion: 2
 guid: 04b0d2a282a9c421da5ae66be538c9e4
-timeCreated: 1459610690
+timeCreated: 1459965841
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: spritesheet_tiles_0
+    21300002: spritesheet_tiles_1
+    21300004: spritesheet_tiles_2
+    21300006: spritesheet_tiles_3
+    21300008: spritesheet_tiles_4
+    21300010: spritesheet_tiles_5
+    21300012: spritesheet_tiles_6
+    21300014: spritesheet_tiles_7
+    21300016: spritesheet_tiles_8
+    21300018: spritesheet_tiles_9
+    21300020: spritesheet_tiles_10
+    21300022: spritesheet_tiles_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +61,340 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: spritesheet_tiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31, y: 125}
+        - {x: -28, y: 125}
+        - {x: -59, y: 115}
+        - {x: -59, y: 2}
+        - {x: 57, y: 2}
+        - {x: 57, y: 92}
+        - {x: 34, y: 123}
+    - name: spritesheet_tiles_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 384
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -145, y: -437}
+        - {x: -166, y: -448}
+        - {x: -166, y: -473}
+        - {x: -142, y: -494}
+        - {x: -113, y: -494}
+        - {x: -90, y: -476}
+        - {x: -90, y: -454}
+        - {x: -98, y: -437}
+      - - {x: 71, y: -456}
+        - {x: 112, y: -494}
+        - {x: 142, y: -494}
+        - {x: 149, y: -463}
+        - {x: 192, y: -455}
+        - {x: 192, y: 402}
+        - {x: 183, y: 409}
+        - {x: 70, y: 488}
+        - {x: 56, y: 494}
+        - {x: -10, y: 494}
+        - {x: -65, y: 487}
+        - {x: -66, y: 484}
+        - {x: -102, y: 432}
+        - {x: -138, y: 438}
+        - {x: -192, y: 412}
+        - {x: -192, y: 397}
+        - {x: -185, y: 394}
+        - {x: -192, y: 341}
+        - {x: -192, y: 325}
+        - {x: -160, y: 322}
+        - {x: -187, y: 241}
+        - {x: -186, y: 213}
+        - {x: -150, y: 178}
+        - {x: -140, y: 176}
+        - {x: -127, y: 148}
+        - {x: -182, y: 148}
+        - {x: -192, y: 144}
+        - {x: -192, y: 21}
+        - {x: -183, y: 14}
+        - {x: -192, y: -2}
+        - {x: -192, y: -72}
+        - {x: -149, y: -80}
+        - {x: -140, y: -114}
+        - {x: -115, y: -114}
+        - {x: -109, y: -78}
+        - {x: -71, y: -113}
+        - {x: -41, y: -112}
+        - {x: -39, y: -110}
+        - {x: -39, y: -87}
+        - {x: 41, y: -112}
+        - {x: 64, y: -112}
+        - {x: 60, y: -119}
+        - {x: 54, y: -264}
+        - {x: 38, y: -272}
+        - {x: 38, y: -289}
+        - {x: -46, y: -263}
+        - {x: -73, y: -274}
+        - {x: -66, y: -371}
+        - {x: -3, y: -371}
+        - {x: 2, y: -338}
+        - {x: 39, y: -321}
+        - {x: 37, y: -367}
+        - {x: 65, y: -372}
+        - {x: 41, y: -393}
+        - {x: 36, y: -415}
+        - {x: -47, y: -394}
+        - {x: -61, y: -397}
+        - {x: -67, y: -404}
+        - {x: -66, y: -494}
+        - {x: -39, y: -494}
+        - {x: -34, y: -484}
+        - {x: 33, y: -494}
+        - {x: 70, y: -494}
+      - - {x: -73, y: -308}
+        - {x: -75, y: -307}
+        - {x: -88, y: -307}
+        - {x: -94, y: -310}
+        - {x: -122, y: -321}
+        - {x: -128, y: -344}
+        - {x: -134, y: -321}
+        - {x: -145, y: -316}
+        - {x: -167, y: -307}
+        - {x: -180, y: -307}
+        - {x: -183, y: -308}
+        - {x: -183, y: -320}
+        - {x: -174, y: -348}
+        - {x: -170, y: -354}
+        - {x: -135, y: -368}
+        - {x: -121, y: -368}
+        - {x: -85, y: -352}
+        - {x: -82, y: -347}
+        - {x: -73, y: -317}
+      - - {x: -133, y: -163}
+        - {x: -153, y: -163}
+        - {x: -157, y: -164}
+        - {x: -192, y: -200}
+        - {x: -192, y: -224}
+        - {x: -186, y: -240}
+        - {x: -67, y: -240}
+        - {x: -62, y: -225}
+        - {x: -62, y: -206}
+        - {x: -103, y: -172}
+      - - {x: -16, y: -168}
+        - {x: -29, y: -206}
+        - {x: -32, y: -213}
+        - {x: -32, y: -218}
+        - {x: -26, y: -240}
+        - {x: 22, y: -240}
+        - {x: 32, y: -215}
+        - {x: 32, y: -205}
+        - {x: -3, y: -168}
+      - - {x: 65, y: 494}
+        - {x: 65, y: 490}
+        - {x: 75, y: 482}
+        - {x: 93, y: 482}
+        - {x: 97, y: 483}
+        - {x: 104, y: 490}
+        - {x: 105, y: 494}
+      - - {x: 107, y: 494}
+        - {x: 107, y: 486}
+        - {x: 116, y: 482}
+        - {x: 140, y: 482}
+        - {x: 147, y: 492}
+        - {x: 147, y: 494}
+      - - {x: 149, y: 494}
+        - {x: 149, y: 486}
+        - {x: 158, y: 482}
+        - {x: 182, y: 482}
+        - {x: 189, y: 492}
+        - {x: 189, y: 494}
+    - name: spritesheet_tiles_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2002
+        width: 127
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63.5, y: 23}
+        - {x: -63.5, y: -23}
+        - {x: 63.5, y: -23}
+        - {x: 63.5, y: 23}
+    - name: spritesheet_tiles_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 128
+        width: 120
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35, y: 128}
+        - {x: -52, y: 128}
+        - {x: -60, y: 126}
+        - {x: -60, y: -128}
+        - {x: 58, y: -128}
+        - {x: 60, y: -126}
+        - {x: 60, y: 89}
+        - {x: 50, y: 118}
+    - name: spritesheet_tiles_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 46}
+        - {x: -64, y: 7}
+        - {x: -43, y: -46}
+        - {x: 41, y: -46}
+        - {x: 56, y: -23}
+        - {x: 64, y: 6}
+        - {x: 64, y: 46}
+    - name: spritesheet_tiles_5
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 256
+        width: 118
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: -5}
+        - {x: -59, y: -46}
+        - {x: 57, y: -46}
+        - {x: 59, y: -40}
+        - {x: 59, y: 46}
+        - {x: 14, y: 46}
+        - {x: -9, y: 32}
+    - name: spritesheet_tiles_6
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 256
+        width: 75
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 52}
+        - {x: -21.5, y: 51}
+        - {x: -37.5, y: 21}
+        - {x: -37.5, y: -29}
+        - {x: -17.5, y: -52}
+        - {x: 18.5, y: -52}
+        - {x: 37.5, y: -16}
+        - {x: 37.5, y: 42}
+        - {x: 23.5, y: 52}
+    - name: spritesheet_tiles_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 33}
+        - {x: -64, y: -19}
+        - {x: -59, y: -33}
+        - {x: 44, y: -33}
+        - {x: 64, y: -5}
+        - {x: 64, y: 33}
+    - name: spritesheet_tiles_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 128
+        width: 114
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 54}
+        - {x: -57, y: 32}
+        - {x: -57, y: -54}
+        - {x: 57, y: -54}
+        - {x: 57, y: 8}
+        - {x: 50, y: 54}
+    - name: spritesheet_tiles_9
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 91
+        width: 128
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: 57}
+        - {x: -64, y: 36}
+        - {x: -64, y: -57}
+        - {x: 64, y: -57}
+        - {x: 64, y: 22}
+        - {x: 46, y: 57}
+    - name: spritesheet_tiles_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -91, y: 46}
+        - {x: -128, y: 38}
+        - {x: -128, y: -46}
+        - {x: 128, y: -46}
+        - {x: 128, y: -35}
+        - {x: 120, y: 4}
+        - {x: 108, y: 22}
+        - {x: 33, y: 46}
+    - name: spritesheet_tiles_11
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 118
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 46}
+        - {x: -59, y: -46}
+        - {x: 59, y: -46}
+        - {x: 59, y: 4}
+        - {x: -15, y: 46}
     outline: []
   spritePackingTag: 
   userData: 

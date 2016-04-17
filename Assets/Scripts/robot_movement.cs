@@ -7,7 +7,15 @@ public class robot_movement : MonoBehaviour {
 	private float cSpeed;
 	private float maxSpeed = 10f;
 	private float jumpSpeed = 10f;
+
 	private bool onGround = false;
+	private bool inDoor = false;
+
+	private Vector3 regularSize;
+	private Vector3 smallSize;
+
+	private Vector3 otherDoorLocation;
+
 
 	public Transform spawnPoint;
 
@@ -19,6 +27,22 @@ public class robot_movement : MonoBehaviour {
 		playerRb2D = GetComponent<Rigidbody2D> ();
 		playerAnim = GetComponent<Animator> ();
 		cSpeed = speed;
+
+		regularSize = transform.localScale;
+		smallSize = regularSize - new Vector3 (.5f, .5f, 0);
+	}
+
+
+	void OnTriggerStay2D(Collider2D col){
+		if((col.tag == "Door")&&((transform.eulerAngles.z < 16) || (transform.eulerAngles.z > 344))){
+			otherDoorLocation = (col.GetComponent<DoorScript> ().otherPosition) + new Vector3(0,.5f,0);
+			inDoor = true;
+		}
+
+	}
+
+	void OnTriggerExit2D(Collider2D col){
+		inDoor = false;
 	}
 
 	void OnCollisionEnter2D(Collision2D col){
@@ -48,8 +72,6 @@ public class robot_movement : MonoBehaviour {
 
 
 	void Update(){
-		
-
 
 	}
 
@@ -77,9 +99,24 @@ public class robot_movement : MonoBehaviour {
 		playerAnim.SetBool ("jumping", !onGround);
 
 		// Jumping of the Bot
-		if ((vert > 0)&&(onGround)) {
+		if ((vert > 0)&&(onGround)&&(!inDoor)) {
 			playerRb2D.AddForce(new Vector2(0,jumpSpeed), ForceMode2D.Impulse);
 			onGround = false;
+		}
+			
+		// Jumping of the Bot
+		if ((vert > 0)&&(onGround)&&(inDoor)) {
+			
+			if (LayerMask.LayerToName (gameObject.layer) == "Background_Level") {
+				gameObject.layer = LayerMask.NameToLayer ("Default");
+				GetComponent<SpriteRenderer> ().sortingLayerName = "Level";
+				transform.localScale = regularSize;
+			} else {
+				gameObject.layer = LayerMask.NameToLayer ("Background_Level");
+				GetComponent<SpriteRenderer> ().sortingLayerName = "Background";
+				transform.localScale = smallSize;
+			}
+			transform.position = otherDoorLocation;
 		}
 
 
@@ -99,10 +136,10 @@ public class robot_movement : MonoBehaviour {
 
 		if (transform.position.y <= -10) {
 			// respawns if falls off the map
-			//Vector3 temp = transform.position;
-			//temp.y = 10f;
 			playerRb2D.velocity = new Vector2();
-
+			gameObject.layer = LayerMask.NameToLayer ("Default");
+			GetComponent<SpriteRenderer> ().sortingLayerName = "Level";
+			transform.localScale = regularSize;
 			transform.position= spawnPoint.position;
 
 		}
