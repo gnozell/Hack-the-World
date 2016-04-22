@@ -50,13 +50,15 @@ public class robot_movement : MonoBehaviour {
 	}
 
 	void OnCollisionStay2D(Collision2D col){
-		if (col.gameObject.tag == "Ground") {
-			onGround = true;
-		}
-		if(col.gameObject.tag == "MovingPlatform"){
-			transform.parent = col.transform;
-			onGround = true;
+		if (col.gameObject.transform.position.y < gameObject.transform.position.y) {
+			if (col.gameObject.tag == "Ground") {
+				onGround = true;
+			}
+			if (col.gameObject.tag == "MovingPlatform") {
+				transform.parent = col.transform;
+				onGround = true;
 
+			}
 		}
 	}
 

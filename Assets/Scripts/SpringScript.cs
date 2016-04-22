@@ -14,11 +14,15 @@ public class SpringScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D col){
-		pressed = true;
+
 	}
 
 	void OnCollisionStay2D(Collision2D col){
-		col.rigidbody.AddForce(new Vector2(-springForce*Mathf.Sin(transform.eulerAngles.z * Mathf.PI / 180),springForce*Mathf.Cos(transform.eulerAngles.z * Mathf.PI / 180)), ForceMode2D.Impulse);
+
+		if (col.gameObject.transform.position.y > gameObject.transform.position.y) {
+			pressed = true;
+			col.rigidbody.AddForce(new Vector2(-springForce*Mathf.Sin(transform.eulerAngles.z * Mathf.PI / 180),springForce*Mathf.Cos(transform.eulerAngles.z * Mathf.PI / 180)), ForceMode2D.Impulse);
+		}
 
 	}
 
