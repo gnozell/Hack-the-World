@@ -18,4 +18,8 @@ public class MainMenu : MonoBehaviour {
 	public void goLevel1(){
 		Application.LoadLevel(level1);
 	}
+
+	public void quitGame(){
+		Application.Quit ();
+	}
 }

@@ -22,6 +22,9 @@ public class SpringScript : MonoBehaviour {
 		if (col.gameObject.transform.position.y > gameObject.transform.position.y) {
 			pressed = true;
 			col.rigidbody.AddForce(new Vector2(-springForce*Mathf.Sin(transform.eulerAngles.z * Mathf.PI / 180),springForce*Mathf.Cos(transform.eulerAngles.z * Mathf.PI / 180)), ForceMode2D.Impulse);
+			if (col.gameObject.GetComponent<AudioSource> () != null){
+				col.gameObject.GetComponent<AudioSource> ().Play ();
+			}
 		}
 
 	}
